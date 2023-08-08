@@ -175,7 +175,7 @@ plot_hF_with_shuffleddata(hF[,target_trait_idx], X[,target_trait_idx], 7)
 
 #### Output image example
 
-![hf_evaluation](fig/fig_hf_evaluation.png)
+![hf_evaluation](fig/fig_hF_evaluation.png)
 
 ***
 #### plot_tF_with_shuffledata
@@ -204,4 +204,4 @@ plot_tF_with_shuffleddata(tF[,target_trait_idx], X[,target_trait_idx], 7)
 
 #### Output image example
 
-![tf_evaluation](fig/fig_tf_evaluation.png)
+![tf_evaluation](fig/fig_tF_evaluation.png)
