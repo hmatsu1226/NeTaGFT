@@ -1,6 +1,8 @@
 # NeTaGFT
 NeTaGFT: a network-based method for trait analysis
 
+![NeTaGFT](fig/fig_NeTaGFT.png)
+
 ## Reference
 
 ## Requirements
@@ -120,6 +122,9 @@ barplot_gfdomain(hF,tF,i)
 - i
 	- It is the parameter to specify the index of the eigenvector. The hF and tF values for eigenvector u_i are visualized.
 
+#### Output image example
+
+![barplot](fig/fig_barplot_gfdomain.png)
 
 ***
 #### plot_aGLR
@@ -139,6 +144,9 @@ plot_aGLR(X,U,shuffle_num)
 - shuffle_num
 	- It is the number of negative control data generated from shuffling X.
 
+#### Output image example
+
+![aGLR](fig/fig_aGLR.png)
 
 ***
 #### plot_hF_with_shuffledata
@@ -161,10 +169,13 @@ plot_hF_with_shuffledata(hF, X, i)
 You can plot part of traits as follows,
 
 ```
-target_trait_idx <- c(1:3,8:10)
-plot_hF_with_shuffleddata(hF[,target_trait_idx], X[,target_trait_idx], 2)
+target_trait_idx <- c(1:3,14:16)
+plot_hF_with_shuffleddata(hF[,target_trait_idx], X[,target_trait_idx], 7)
 ```
 
+#### Output image example
+
+![hf_evaluation](fig/fig_hf_evaluation.png)
 
 ***
 #### plot_tF_with_shuffledata
@@ -187,6 +198,10 @@ plot_tF_with_shuffledata(tF, X, i)
 You can plot part of traits as follows,
 
 ```
-target_trait_idx <- c(1:3,8:10)
-plot_tF_with_shuffleddata(tF[,target_trait_idx], X[,target_trait_idx], 2)
+target_trait_idx <- c(1:3,14:16)
+plot_tF_with_shuffleddata(tF[,target_trait_idx], X[,target_trait_idx], 7)
 ```
+
+#### Output image example
+
+![tf_evaluation](fig/fig_tf_evaluation.png)
